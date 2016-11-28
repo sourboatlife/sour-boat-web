@@ -13,9 +13,7 @@ public class Main {
 
   public static void main(String[] args) {
 
-    port(System.getenv("PORT") != null
-      ? Integer.valueOf(System.getenv("PORT"))
-      : 5000);
+    port(Integer.valueOf(System.getenv("PORT")));
     staticFileLocation("/public");
 
     get("/", (request, response) -> {
