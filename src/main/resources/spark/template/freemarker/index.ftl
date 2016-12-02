@@ -5,7 +5,6 @@
 </head>
 
 <body>
-
 <div class="jumbotron text-center">
   <div class="container">
     <h1>Sour Boat Life</h1>
@@ -21,6 +20,5 @@
         </div>
     </#list>
 </div>
-
 </body>
 </html>
