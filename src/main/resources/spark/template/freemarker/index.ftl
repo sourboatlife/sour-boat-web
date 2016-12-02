@@ -6,8 +6,6 @@
 
 <body>
 
-  <#include "nav.ftl">
-
 <div class="jumbotron text-center">
   <div class="container">
     <h1>Sour Boat Life</h1>
