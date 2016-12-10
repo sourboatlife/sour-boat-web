@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <#include "header.ftl">
+    <#include "header.ftl">
 </head>
 
 <body>
-<div class="jumbotron text-center">
-  <div class="container">
-    <h1>Sour Boat Life</h1>
-  </div>
-</div>
-
-<div class="container">
-    <#list show.episodes as episode>
-        <div class="panel panel-default">
-          <div class="panel-body">
-            ${episode.title?html}
-          </div>
-        </div>
-    </#list>
-</div>
+    <main>
+        <h1>Sour Boat Life</h1>
+        <#list show.episodes as episode>
+            <article class="episode">
+                <details>
+                    <summary>
+                        <h2>${episode.originalAirDate}: ${episode.title?html}</h2>
+                    </summary>
+                    <p>${episode.description}</p>
+                    <ul class="parts">
+                        <#list episode.links as url>
+                            <li><iframe width="560" height="315" src="${url}" frameborder="0" allowfullscreen></iframe></li>
+                        </#list>
+                    </ul>
+                    <footer><#list episode.tags as tag><span>${tag}</span></#list></footer>
+                </details>
+            </article>
+        </#list>
+    </main>
 </body>
 </html>

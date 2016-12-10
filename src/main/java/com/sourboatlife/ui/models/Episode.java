@@ -1,6 +1,7 @@
 package com.sourboatlife.ui.models;
 
 import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,16 +9,16 @@ import java.util.List;
  * Created by Brian on 11/27/2016.
  */
 public class Episode {
-    private String link;
+    private List<String> links;
     private List<String> tags;
     private String title;
     private String description;
-    private ZonedDateTime originalAirDate;
+    private String originalAirDate;
 
     protected Episode() {}
 
-    public String getLink() {
-        return link;
+    public List<String> getLinks() {
+        return links;
     }
 
     public List<String> getTags() {
@@ -32,12 +33,12 @@ public class Episode {
         return description;
     }
 
-    public ZonedDateTime getOriginalAirDate() {
+    public String getOriginalAirDate() {
         return originalAirDate;
     }
 
     public static class Builder {
-        private String link;
+        private List<String> links = new ArrayList<>();
         private List<String> tags = new ArrayList<>();
         private String title;
         private String description;
@@ -47,10 +48,13 @@ public class Episode {
         {
             Episode episode = new Episode();
             episode.title = this.title;
-            episode.link = link;
+            episode.links = links;
             episode.tags = tags;
             episode.description = description;
-            episode.originalAirDate = originalAirDate;
+            if (originalAirDate != null)
+            {
+                episode.originalAirDate = originalAirDate.format(DateTimeFormatter.ISO_LOCAL_DATE);
+            }
             return episode;
         }
 
@@ -61,7 +65,7 @@ public class Episode {
         }
 
         public Builder withLink(String link) {
-            this.link = link;
+            this.links.add(link);
             return this;
         }
 

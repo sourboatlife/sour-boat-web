@@ -3,6 +3,7 @@ import com.sourboatlife.ui.models.Show;
 import spark.ModelAndView;
 import spark.template.freemarker.FreeMarkerEngine;
 
+import java.time.ZonedDateTime;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -18,8 +19,12 @@ public class Main {
     get("/", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
             attributes.put("show", new Show(Arrays.asList(new Episode.Builder()
-                    .withTitle("Test Data!")
-                    .withLink("http://www.twitch.tv/sourboatlife")
+                    .withTitle("Title of this week's Show")
+                    .withDescription("This is a long description of what it is we did during this show. This is a long description of what it is we did during this show. This is a long description of what it is we did during this show. This is a long description of what it is we did during this show. This is a long description of what it is we did during this show. This is a long description of what it is we did during this show. This is a long description of what it is we did during this show. This is a long description of what it is we did during this show. This is a long description of what it is we did during this show. This is a long description of what it is we did during this show. This is a long description of what it is we did during this show.")
+                    .withLink("https://www.youtube.com/embed/AZc0QiGdzl8")
+                    .withLink("https://www.youtube.com/embed/t5IYkoQ-2hY")
+                    .withTag("Programming").withTag("UI Frameworks")
+                    .withOriginalAirDate(ZonedDateTime.now())
                     .build())));
 
             return new ModelAndView(attributes, "index.ftl");
