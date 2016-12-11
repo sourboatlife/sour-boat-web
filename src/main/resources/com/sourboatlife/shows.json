@@ -2,6 +2,7 @@
   "title": "Sour Boat Life",
   "episodes": [
     {
+      "title": "SourBoatWebPages: UI Frameworks and Databases today",
       "links": [
         "https://www.youtube.com/embed/AZc0QiGdzl8",
         "https://www.youtube.com/embed/t5IYkoQ-2hY"
@@ -10,11 +11,11 @@
         "Programming",
         "UI Frameworks"
       ],
-      "title": "Anyway, this week's show is about penises",
-      "description": "This is a long description of what it is we did during this show. This is a long description of what it is we did during this show. This is a long description of what it is we did during this show. This is a long description of what it is we did during this show. This is a long description of what it is we did during this show. This is a long description of what it is we did during this show. This is a long description of what it is we did during this show. This is a long description of what it is we did during this show. This is a long description of what it is we did during this show. This is a long description of what it is we did during this show. This is a long description of what it is we did during this show.",
-      "originalAirDate": "2016-12-11"
+      "description": "Today we attempt to talk about web ui frameworks and databases but get sidetracked by The Hobbit and Technical Difficulties (tm).",
+      "originalAirDate": "2016-12-03"
     },
     {
+      "title": "Sour Boat Life: In The Beginning",
       "links": [
         "https://www.youtube.com/embed/lsLs1sQhubc"
       ],
@@ -22,9 +23,8 @@
         "Programming",
         "Pilot"
       ],
-      "title": "Title of last week\u0027s Show",
-      "description": "This is a long description of what it is we did during this show. This is a long description of what it is we did during this show. This is a long description of what it is we did during this show. This is a long description of what it is we did during this show. This is a long description of what it is we did during this show. This is a long description of what it is we did during this show. This is a long description of what it is we did during this show. This is a long description of what it is we did during this show. This is a long description of what it is we did during this show. This is a long description of what it is we did during this show. This is a long description of what it is we did during this show.",
-      "originalAirDate": "2016-12-11"
+      "description": "This is the first recorded episode of Dan and I messing around writing software and generally just mouthing off. In general, we'll be experimenting with new technologies and playing around with whatever interests us while we pretend to be professionals that know what we're talking about. First, we have to write a web page for this show though!",
+      "originalAirDate": "2016-11-30"
     }
   ]
 }
