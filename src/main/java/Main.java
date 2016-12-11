@@ -12,7 +12,8 @@ import static spark.Spark.*;
 public class Main {
 
     public static void main(String[] args) {
-        port(5000);
+        port(Integer.valueOf(System.getenv("PORT")));
+
         staticFileLocation("/public");
 
         final List<Show> shows = new JsonShowRetriever().getShows();
