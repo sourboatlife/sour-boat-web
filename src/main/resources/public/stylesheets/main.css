@@ -1,8 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans');
 
+/*
+Color Guide:
+dark gray: #202020;
+light yellow: #ffff39;
+dark yellow/green: #b5b502
+*/
+
+h1 {
+    background: linear-gradient(to right, #202020, #ffff39);
+    padding: .75em 0;
+}
 
 h2 {
     display: inline;
+    font-size: 1.25em;
 }
 
 li {
@@ -11,7 +23,7 @@ li {
 
 body {
     font-family: 'Fira Sans', sans-serif;
-    background: black;
+    background: #202020;
     color: #ffff39;
 }
 
@@ -21,14 +33,21 @@ main {
 }
 
 article {
-    border: 2px solid #3F5B9C;
-    border-radius: 5px;
     padding: 1em;
-    margin-bottom: 1em;
+    margin: 0 50px;
 }
 
 article:nth-child(odd) {
-    background: #474447;
+    background: #b5b502;
+}
+
+article:nth-child(even) {
+    background: #ffff39;
+}
+
+summary {
+    cursor: pointer;
+    color: #202020;
 }
 
 footer {
