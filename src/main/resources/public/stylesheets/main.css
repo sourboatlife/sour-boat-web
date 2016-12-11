@@ -1,7 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+
+
 h2 {
     display: inline;
 }
 
 li {
     list-style-type: none;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    background: black;
+    color: #ffff39;
+}
+
+main {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+article {
+    border: 2px solid #3F5B9C;
+    border-radius: 5px;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+article:nth-child(odd) {
+    background: #474447;
+}
+
+footer {
+    padding: 50px;
+}
+
+footer span {
+    margin-right: 20px;
 }
