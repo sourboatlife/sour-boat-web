@@ -2,6 +2,22 @@
   "title": "Sour Boat Life",
   "episodes": [
     {
+      "title": "SourBoatWebPages: Better document structure, worse css + a source for real data",
+      "links": [
+        "https://www.youtube.com/embed/",
+        "https://www.youtube.com/embed/"
+      ],
+      "tags": [
+        "Programming",
+        "CSS",
+        "JSON",
+        "Liquibase",
+        "Accessibility"
+      ],
+      "description": "We finally decide on a document structure and start styling it. It is super ugly. ",
+      "originalAirDate": "2016-12-11"
+    },
+    {
       "title": "SourBoatWebPages: UI Frameworks and Databases today",
       "links": [
         "https://www.youtube.com/embed/AZc0QiGdzl8",
