@@ -1,27 +1,59 @@
-.jumbotron {
-  background: #532F8C;
-  color: white;
-  padding-bottom: 80px; }
-  .jumbotron .btn-primary {
-    background: #845ac7;
-    border-color: #845ac7; }
-    .jumbotron .btn-primary:hover {
-      background: #7646c1; }
-  .jumbotron p {
-    color: #d9ccee;
-    max-width: 75%;
-    margin: 1em auto 2em; }
-  .navbar + .jumbotron {
-    margin-top: -20px; }
-  .jumbotron .lang-logo {
-    display: block;
-    background: #B01302;
-    border-radius: 50%;
-    overflow: hidden;
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    border: 2px solid white; }
-    .jumbotron .lang-logo img {
-      max-width: 100%; }
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
 
+/*
+Color Guide:
+dark gray: #202020;
+light yellow: #ffff39;
+dark yellow/green: #b5b502
+*/
+
+h1 {
+    background: linear-gradient(to right, #202020, #ffff39);
+    padding: .75em 0;
+}
+
+h2 {
+    display: inline;
+    font-size: 1.25em;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    background: #202020;
+    color: #ffff39;
+}
+
+main {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+article {
+    padding: 1em;
+    margin: 0 50px;
+    color: #202020;
+}
+
+article:nth-child(odd) {
+    background: #b5b502;
+}
+
+article:nth-child(even) {
+    background: #ffff39;
+}
+
+summary {
+    cursor: pointer;
+}
+
+footer {
+    padding: 50px;
+}
+
+footer span {
+    margin-right: 20px;
+}

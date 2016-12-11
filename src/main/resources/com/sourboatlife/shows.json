@@ -1,0 +1,30 @@
+{
+  "title": "Sour Boat Life",
+  "episodes": [
+    {
+      "title": "SourBoatWebPages: UI Frameworks and Databases today",
+      "links": [
+        "https://www.youtube.com/embed/AZc0QiGdzl8",
+        "https://www.youtube.com/embed/t5IYkoQ-2hY"
+      ],
+      "tags": [
+        "Programming",
+        "UI Frameworks"
+      ],
+      "description": "Today we attempt to talk about web ui frameworks and databases but get sidetracked by The Hobbit and Technical Difficulties (tm).",
+      "originalAirDate": "2016-12-03"
+    },
+    {
+      "title": "Sour Boat Life: In The Beginning",
+      "links": [
+        "https://www.youtube.com/embed/lsLs1sQhubc"
+      ],
+      "tags": [
+        "Programming",
+        "Pilot"
+      ],
+      "description": "This is the first recorded episode of Dan and I messing around writing software and generally just mouthing off. In general, we'll be experimenting with new technologies and playing around with whatever interests us while we pretend to be professionals that know what we're talking about. First, we have to write a web page for this show though!",
+      "originalAirDate": "2016-11-30"
+    }
+  ]
+}
