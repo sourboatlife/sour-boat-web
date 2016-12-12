@@ -4,8 +4,9 @@
     {
       "title": "SourBoatWebPages: Better document structure, worse css + a source for real data",
       "links": [
-        "https://www.youtube.com/embed/",
-        "https://www.youtube.com/embed/"
+        "https://www.youtube.com/embed/JLtTBiATNXA",
+        "https://www.youtube.com/embed/HPdNcK3wXWI",
+        "https://www.youtube.com/embed/bL1xO7MSYSM"
       ],
       "tags": [
         "Programming",
@@ -14,7 +15,7 @@
         "Liquibase",
         "Accessibility"
       ],
-      "description": "We finally decide on a document structure and start styling it. It is super ugly. ",
+      "description": "We finally decide on a document structure and start styling it. It is super ugly. We also put in an easy hack to store our show data for the page (like this description)!",
       "originalAirDate": "2016-12-11"
     },
     {
