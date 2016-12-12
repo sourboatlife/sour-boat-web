@@ -3,13 +3,15 @@
 /*
 Color Guide:
 dark gray: #202020;
-light yellow: #ffff39;
+yellow: #ffff39;
+light yellow: #ffff87;
 dark yellow/green: #b5b502
 */
 
 h1 {
     background: linear-gradient(to right, #202020, #ffff39);
     padding: .75em 0;
+    border-radius: 10px;
 }
 
 h2 {
@@ -34,10 +36,17 @@ main {
 
 article {
     padding: 1em;
-    margin: 0 50px;
+    margin: 25px 50px;
+    border-radius: 10px;
     color: #202020;
+    background: #ffff39;
 }
 
+article:hover {
+    background: #ffff87;
+}
+
+/*
 article:nth-child(odd) {
     background: #b5b502;
 }
@@ -45,13 +54,18 @@ article:nth-child(odd) {
 article:nth-child(even) {
     background: #ffff39;
 }
+*/
 
 summary {
     cursor: pointer;
 }
 
+p.show-description {
+    margin-bottom: 0;
+}
+
 footer {
-    padding: 50px;
+    padding: 0 50px;
 }
 
 footer span {
