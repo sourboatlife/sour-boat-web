@@ -3,15 +3,13 @@
 /*
 Color Guide:
 dark gray: #202020;
-slightly less dark gray: #303030 for hexdump background
-yellow: #ffff39;
+slightly less dark gray: #303030 for hex dump background
 yellow: #f9c900;
 light yellow: #ffff87;
-dark yellow/green: #b5b502
 */
 
 h1 {
-    background: #202020 url("LemonHeaderBackground.png") repeat;
+    background: #f9c900 url("LemonHeaderBackground.png") repeat;
     padding: 0.75em 0 .75em 1em;
     margin-top: 0;
     color: #202020;
