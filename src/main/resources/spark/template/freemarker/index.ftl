@@ -8,6 +8,7 @@
     <main>
         <#list shows as show>
             <h1>${show.title}</h1>
+            <article>
             <p>
             Welcome to Sour Boat Life, a show where Brian and Daniel get together, write some software, hang out, and
             generally dick around!
@@ -23,8 +24,9 @@
             and everything else. Please, allow us to entertain you with our banter and share with you all of our grand
             ideals about software development!
             </p>
+            </article>
             <#list show.episodes as episode>
-                <article class="episode">
+                <article class="episode" data-tags="<#list episode.tags as tag>${tag} </#list>">
                     <details <#if episode?counter == 1>open</#if>>
                         <summary>
                             <h2>${episode.title?html}</h2>
@@ -42,5 +44,6 @@
             </#list>
         </#list>
     </main>
+    <script src="js/tags.js" type="text/javascript"></script>
 </body>
 </html>

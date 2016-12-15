@@ -3,15 +3,18 @@
 /*
 Color Guide:
 dark gray: #202020;
+slightly less dark gray: #303030 for hexdump background
 yellow: #ffff39;
+yellow: #f9c900;
 light yellow: #ffff87;
 dark yellow/green: #b5b502
 */
 
 h1 {
-    background: linear-gradient(to right, #202020, #ffff39);
-    padding: .75em 0;
-    border-radius: 10px;
+    background: #202020 url("LemonHeaderBackground.png") repeat;
+    padding: 0.75em 0 .75em 1em;
+    margin-top: 0;
+    color: #202020;
 }
 
 h2 {
@@ -25,39 +28,32 @@ li {
 
 body {
     font-family: 'Fira Sans', sans-serif;
-    background: #202020;
-    color: #ffff39;
-}
-
-main {
-    padding-left: 20px;
-    padding-right: 20px;
+    background: #202020 url("SBL_BackGround.png") repeat;
+    margin: 0;
 }
 
 article {
-    padding: 1em;
-    margin: 25px 50px;
+    margin: 2em 15%;
     border-radius: 10px;
     color: #202020;
-    background: #ffff39;
+    background: #f9c900;
+    /* 1px so that it adds to the <p>'s margin. If it is 0, the margin collapses */
+    padding: 1px 1em;
 }
 
-article:hover {
-    background: #ffff87;
+article.episode {
+    padding: 0;
 }
-
-/*
-article:nth-child(odd) {
-    background: #b5b502;
-}
-
-article:nth-child(even) {
-    background: #ffff39;
-}
-*/
 
 summary {
     cursor: pointer;
+    padding: 1em;
+    border-radius: 10px;
+    background: #f9c900;
+}
+
+summary:hover {
+    background: #ffff87;
 }
 
 p.show-description {
@@ -65,9 +61,13 @@ p.show-description {
 }
 
 footer {
-    padding: 0 50px;
+    padding: 0 3em 1em 3em;
 }
 
 footer span {
     margin-right: 20px;
+}
+
+.airdate {
+    white-space: nowrap;
 }
