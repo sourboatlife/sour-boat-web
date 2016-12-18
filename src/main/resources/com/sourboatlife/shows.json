@@ -2,6 +2,34 @@
   "title": "Sour Boat Life",
   "episodes": [
     {
+      "title": "SourBoatJavascript: Adding a fake terminal to the web page, because mice are for pansies!",
+      "links": [
+      ],
+      "tags": [
+        "Programming",
+        "web",
+        "Javascript"
+      ],
+      "description": "We will be working on writing up a bash-like terminal for the site that you can use to navigate and explore the videos on the site. Written in Javascript.",
+      "originalAirDate": "Coming Up Next"
+    },
+    {
+      "title": "SourBoatWebPages: Base page almost finished! Starting a new fun project",
+      "links": [
+        "https://www.youtube.com/embed/oJViSkk0_lQ",
+        "https://www.youtube.com/embed/Ta7SJfaMph0",
+        "https://www.youtube.com/embed/X39x2S0mWJs"
+      ],
+      "tags": [
+        "Programming",
+        "CSS",
+        "web",
+        "Javscript"
+      ],
+      "description": "We have pretty much wrapped up our basic show website now. There are many more useful things we could add to this, of course, but instead, we are starting a new project that is just for shits and grins!",
+      "originalAirDate": "2016-12-17"
+    },
+    {
       "title": "SourBoatWebPages: Better document structure, worse css + a source for real data",
       "links": [
         "https://www.youtube.com/embed/JLtTBiATNXA",
