@@ -23,5 +23,11 @@ public class Main {
             attributes.put("shows", shows);
             return new ModelAndView(attributes, "index.ftl");
         }, new FreeMarkerEngine());
+
+        get("/sh", (request, response) -> {
+            Map<String, Object> attributes = new HashMap<>();
+            attributes.put("shows", shows);
+            return new ModelAndView(attributes, "sh.ftl");
+        }, new FreeMarkerEngine());
     }
 }
