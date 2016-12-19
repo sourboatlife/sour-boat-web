@@ -6,13 +6,14 @@ import spark.template.freemarker.FreeMarkerEngine;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 import static spark.Spark.*;
 
 public class Main {
 
     public static void main(String[] args) {
-        port(Integer.valueOf(System.getenv("PORT")));
+        port(Integer.valueOf(Optional.ofNullable(System.getenv("PORT")).orElse("8000")));
 
         staticFileLocation("/public");
 
