@@ -13,7 +13,7 @@ var shell = {
   },
 
   echo: function(words) {
-    return '';
+    return words.slice(1).join(' ');
   },
 
   find: function(words) {
@@ -28,7 +28,7 @@ var shell = {
     return '';
   },
 
-  bad_command_or_file_name: function (words) {
+  badCommandOrFileName: function (words) {
     return 'sbsh: ' + words[0] + ': command not found';
   },
 
@@ -46,17 +46,24 @@ var shell = {
       case 'find':  return this.find(words);
       case 'ls':    return this.ls(words);
       case 'man':   return this.man(words);
-      default:      return this.bad_command_or_file_name(words);
+      default:      return this.badCommandOrFileName(words);
     }
   },
 
   print: function (output) {
     this.terminalOutput().append('<pre>' + output + '</pre>');
-    this.terminalInput().val('');
   },
 
   read: function() {
-    this.print(this.eval(this.validateInput(this.terminalInput().val())));
+    // echo the command back to the user
+    var commandLine = this.terminalInput().val();
+    this.print($("label[for='cmd']").text() + commandLine);
+
+    // write the result of running the command
+    this.print(this.eval(this.validateInput(commandLine)));
+
+    // clear the line
+    this.terminalInput().val('');
   },
 
   validateInput: function(input) {
@@ -66,5 +73,8 @@ var shell = {
 };
 
 $(document).ready(function () {
-  $('#cmd').on('blur', function() {shell.read();});
+  $('#cmd').on('keydown', function(e) {
+    if (e.keyCode == 13)
+      shell.read();
+  });
 });
