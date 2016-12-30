@@ -9,8 +9,7 @@
 <body>
     <main class="sh">
         <form method="POST" onsubmit="return false;" action="sh">
-        <div class="terminal output">
-        </div>
+        <pre class="terminal output"></pre>
         <label for="cmd">sour-boat-life~$: </label><input type="text" name="cmd" id="cmd">
         </form>
     </main>

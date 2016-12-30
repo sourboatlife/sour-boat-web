@@ -8,7 +8,7 @@ var shell = {
   },
 
   clear: function(words) {
-    this.terminalOutput().html('');
+    this.terminalOutput().text('');
     return '';
   },
 
@@ -50,8 +50,8 @@ var shell = {
     }
   },
 
-  print: function (output) {
-    this.terminalOutput().append('<pre>' + output + '</pre>');
+  print: function(output) {
+    this.terminalOutput().text(this.terminalOutput().text() + '\n' + output);
     this.terminalInput().val('');
   },
 
@@ -66,5 +66,10 @@ var shell = {
 };
 
 $(document).ready(function () {
-  $('#cmd').on('blur', function() {shell.read();});
+  shell.terminalInput().keypress(function(event) {
+    /* when they hit enter */
+    if (event.which === 13) {
+      shell.read();
+    }
+  });
 });
