@@ -1,5 +1,5 @@
 /* For mobile: get rid of background images for faster page load and remove extra margins that waste space. */
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     article {
         margin: 2em 0;
     }
