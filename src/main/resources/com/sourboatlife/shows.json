@@ -4,14 +4,15 @@
     {
       "title": "SourBoatJavascript: Adding a fake terminal to the web page, because mice are for pansies!",
       "links": [
+        "https://www.youtube.com/embed/GttR3mkFQ60",
+        "https://www.youtube.com/embed/-j-4_r_Azq8"
       ],
       "tags": [
-        "Programming",
-        "web",
-        "Javascript"
+        "Agile Development",
+        "Testing"
       ],
-      "description": "We will be working on writing up a bash-like terminal for the site that you can use to navigate and explore the videos on the site. Written in Javascript.",
-      "originalAirDate": "Coming Up Next"
+      "description": "In this episode we were SUPPOSED to be working on writing our fake terminal to browse the videos on the site, but instead we rant about agile programming and, you know what? I forget what all we ranted about. No programming here though!",
+      "originalAirDate": "2017-1-8"
     },
     {
       "title": "SourBoatWebPages: Base page almost finished! Starting a new fun project",
