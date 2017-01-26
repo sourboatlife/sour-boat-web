@@ -35,7 +35,7 @@
                         </summary>
                         <ul class="parts"
                             <#list episode.links as url>
-                                <li><iframe width="560" height="315" src="${url}" frameborder="0" allowfullscreen></iframe></li>
+                                <li><iframe src="${url}" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe></li>
                             </#list>
                         </ul>
                         <footer><#list episode.tags as tag><span>${tag}</span></#list></footer>

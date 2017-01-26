@@ -2,6 +2,20 @@
   "title": "Sour Boat Life",
   "episodes": [
     {
+      "title": "SourBoatJavascript: More meager progress on writing our fake shell on the website.",
+      "links": [
+        "https://player.twitch.tv/?video=v116781185&!autoplay"
+      ],
+      "tags": [
+        "Javascript",
+        "web",
+        "Plan9",
+        "Programming"
+      ],
+      "description": "We spend a good deal of time messing around tonight, but we DID actually alter text in a new fangled fancy Eye Dee Eee in a manner congruous with the gesticulations and arcane rites of a Technomancer!",
+      "originalAirDate": "2017-1-22"
+    },
+    {
       "title": "SourBoatJavascript: Adding a fake terminal to the web page, because mice are for pansies!",
       "links": [
         "https://www.youtube.com/embed/GttR3mkFQ60",
