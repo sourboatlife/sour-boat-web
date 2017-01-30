@@ -2,6 +2,21 @@
   "title": "Sour Boat Life",
   "episodes": [
     {
+      "title": "SourBoatJavascript: More meager progress on writing our fake shell on the website (again).",
+      "links": [
+        "https://player.twitch.tv/?video=v118415564&!autoplay",
+        "https://player.twitch.tv/?video=v118416117&!autoplay"
+      ],
+      "tags": [
+        "Javascript",
+        "web",
+        "Bob Ross",
+        "Programming"
+      ],
+      "description": "Well, we're still at it. In this episode, we started really parsing path strings and we now have a data model to build our commands on. BUT, before that, we talked about happy little trees and eventually got around to BEATING THE DEVIL OUT OF IT.",
+      "originalAirDate": "2017-01-28"
+    },
+    {
       "title": "SourBoatJavascript: More meager progress on writing our fake shell on the website.",
       "links": [
         "https://player.twitch.tv/?video=v116781185&!autoplay"
@@ -13,7 +28,7 @@
         "Programming"
       ],
       "description": "We spend a good deal of time messing around tonight, but we DID actually alter text in a new fangled fancy Eye Dee Eee in a manner congruous with the gesticulations and arcane rites of a Technomancer!",
-      "originalAirDate": "2017-1-22"
+      "originalAirDate": "2017-01-22"
     },
     {
       "title": "SourBoatJavascript: Adding a fake terminal to the web page, because mice are for pansies!",
@@ -26,7 +41,7 @@
         "Testing"
       ],
       "description": "In this episode we were SUPPOSED to be working on writing our fake terminal to browse the videos on the site, but instead we rant about agile programming and, you know what? I forget what all we ranted about. No programming here though!",
-      "originalAirDate": "2017-1-8"
+      "originalAirDate": "2017-01-08"
     },
     {
       "title": "SourBoatWebPages: Base page almost finished! Starting a new fun project",
