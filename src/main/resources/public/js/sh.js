@@ -1,25 +1,31 @@
 var shell = {
   cat: function(words) {
-    return '';
+    var result = "";
+    words.slice(1).forEach(function(path) {
+      if (shell.pathIsValid(path))
+        result += shell.pathToNode(path).html();
+    });
+    return result;
   },
 
   cd: function(words) {
     // handle .. and .
-//    checkBadPath();
-    if (words[1][0] === '/')
-    {
-      this.ENV.CWD = words[1];
-    }
-    else
-    {
+    if (this.pathIsValid(words[1])) {
+      if (words[1][0] === '/')
+      {
+        this.ENV.CWD = words[1];
+      }
+      else
+      {
 //      stripExtraSlashes();
-      this.ENV.CWD += words[1];
-    }
+        this.ENV.CWD += words[1];
+      }
 
-    if (this.ENV.CWD[this.ENV.CWD.length-1] !== '/')
-      this.ENV.CWD += '/';
+      if (this.ENV.CWD[this.ENV.CWD.length-1] !== '/')
+        this.ENV.CWD += '/';
 
 //    updatePrompt();
+    }
     return '';
   },
 
@@ -86,7 +92,6 @@ cat title
   SourBoatJavascript: Adding a fake terminal to the web page, because mice are for pansies!
 */
 
-
   terminalOutput: function() { return $('.terminal.output'); },
 
   terminalInput:  function() { return $('#cmd'); },
@@ -111,8 +116,12 @@ cat title
     return root;
   },
 
+  pathIsValid: function(path) {
+    return this.pathToNode(path) !== null;
+  },
+
   // CWD always ends in /
-  ENV: { CWD: "/" },
+  ENV: { CWD: "/", USER: "anon", HOST: "sourboatlife.com", PS1: "\\u@\\h\\w\\$ " },
 
   eval: function (text) {
     var words = text.split(/ /);
@@ -129,8 +138,9 @@ cat title
   },
 
   print: function(output) {
-    this.terminalOutput().text(this.terminalOutput().text() + '\n' + output);
+    this.terminalOutput().html(this.terminalOutput().text() + '\n' + output);
     this.terminalInput().val('');
+    this.updatePrompt();
   },
 
   read: function() {
@@ -140,10 +150,21 @@ cat title
   validateInput: function(input) {
     // implement this
     return input;
+  },
+
+  updatePrompt: function() {
+    var prompt = this.ENV.PS1
+      .replace("\\h", this.ENV.HOST)
+      .replace("\\u", this.ENV.USER)
+      .replace("\\w", this.ENV.CWD)
+      .replace("\\$", "$");
+    console.log("new prompt: " + prompt);
+    $('#prompt').text(prompt);
   }
 };
 
 $(document).ready(function () {
+  shell.updatePrompt();
   shell.terminalInput().keypress(function(event) {
     /* when they hit enter */
     if (event.which === 13) {

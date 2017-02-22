@@ -15,7 +15,8 @@ public class Main {
     public static void main(String[] args) {
         Gson gson = new Gson();
 
-        port(Integer.valueOf(System.getenv("PORT")));
+        String port = System.getenv("PORT");
+        port(Integer.valueOf(port == null ? "8080" : port));
 
         staticFileLocation("/public");
 
