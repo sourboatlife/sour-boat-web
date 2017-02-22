@@ -1,3 +1,4 @@
+import com.google.gson.Gson;
 import com.sourboatlife.dataaccess.JsonShowRetriever;
 import com.sourboatlife.ui.models.Show;
 import spark.ModelAndView;
@@ -12,6 +13,8 @@ import static spark.Spark.*;
 public class Main {
 
     public static void main(String[] args) {
+        Gson gson = new Gson();
+
         port(Integer.valueOf(System.getenv("PORT")));
 
         staticFileLocation("/public");
@@ -29,5 +32,11 @@ public class Main {
             attributes.put("shows", shows);
             return new ModelAndView(attributes, "sh.ftl");
         }, new FreeMarkerEngine());
+
+        get("/json", (request, response) -> {
+            response.type("text/json");
+            return gson.toJson(shows);
+        });
+
     }
 }

@@ -4,6 +4,22 @@ var shell = {
   },
 
   cd: function(words) {
+    // handle .. and .
+//    checkBadPath();
+    if (words[1][0] === '/')
+    {
+      this.ENV.CWD = words[1];
+    }
+    else
+    {
+//      stripExtraSlashes();
+      this.ENV.CWD += words[1];
+    }
+
+    if (this.ENV.CWD[this.ENV.CWD.length-1] !== '/')
+      this.ENV.CWD += '/';
+
+//    updatePrompt();
     return '';
   },
 
@@ -13,7 +29,8 @@ var shell = {
   },
 
   echo: function(words) {
-    return '';
+    words.shift();
+    return words.join(' ');
   },
 
   find: function(words) {
@@ -21,7 +38,16 @@ var shell = {
   },
 
   ls: function(words) {
-    return '';
+    var node = this.pathToNode((words.length < 2) ? this.ENV.CWD : words[1]);
+
+    // iterate over:
+    var result = "";
+    node.children().each(function() {
+      result += this.title + "\n";
+    });
+
+    //construct string to return
+    return result;
   },
 
   man: function(words) {
@@ -32,9 +58,61 @@ var shell = {
     return 'sbsh: ' + words[0] + ': command not found';
   },
 
+/*
+ls
+  SourBoatLife/
+
+cd SourBoatLife
+
+ls
+  Episode 1/
+  Episode 2/
+  Episode 3/
+
+ls -l
+ -rw-r--r--     1 sbw  staff     10824  Jan 8  2017   Episode 1/
+
+cd Episode 3
+
+ls
+  title
+  description
+  tags
+  videos/
+    part 1
+    part 2
+
+cat title
+  SourBoatJavascript: Adding a fake terminal to the web page, because mice are for pansies!
+*/
+
+
   terminalOutput: function() { return $('.terminal.output'); },
 
   terminalInput:  function() { return $('#cmd'); },
+
+  rootDir: function() { return $("#data"); },
+
+  pathToNode: function(path) {
+    if (typeof(path) === 'undefined' || path === null || path.length < 1) return this.ENV.CWD;
+
+    if (path[0] !== '/')
+      path = this.ENV.CWD + path;
+
+    var path_parts = path.split('/');
+    var root = this.rootDir();
+    while (path_parts.length != 0) {
+      var current_chunk = path_parts.shift();
+      if (current_chunk.length) {
+        root = root.children("[title='" + current_chunk + "']");
+      }
+    }
+
+    return root;
+  },
+
+  // CWD always ends in /
+  ENV: { CWD: "/" },
 
   eval: function (text) {
     var words = text.split(/ /);
