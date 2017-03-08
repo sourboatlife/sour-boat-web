@@ -2,6 +2,20 @@
   "title": "Sour Boat Life",
   "episodes": [
     {
+      "title": "SourBoatJavascript: Last show dicking around with javascript and our fake shell.",
+      "links": [
+        "https://player.twitch.tv/?video=v123518355&!autoplay"
+      ],
+      "tags": [
+        "Javascript",
+        "web",
+        "Programming",
+        "Screeps"
+      ],
+      "description": "Let's be honest, I think we've beat this idea to death and it's getting a little boring. It was funny for a bit, but honestly, a fully functioning shell is a lot of work! Too much work for a joke to be honest. So, this is our last time dicking with this and we'll move on to probably playing with Unity next time! Also! We show off a little bit of screeps!",
+      "originalAirDate": "2017-02-20"
+    },
+    {
       "title": "SourBoatJavascript: More meager progress on writing our fake shell on the website (again).",
       "links": [
         "https://player.twitch.tv/?video=v118415564&!autoplay",
