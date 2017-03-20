@@ -4,7 +4,7 @@
     {
       "title": "Let's Learn Something New - Ep. 1: Writing 3d games with Unity and C#",
       "links": [
-        "https://player.twitch.tv/?channel=sourboatlife"
+        "https://player.twitch.tv/?video=v129936412&!autoplay"
       ],
       "tags": [
         "Unity",
@@ -12,7 +12,7 @@
         "Programming",
         "Games"
       ],
-      "description": "Starting off a new series of videos today where we start learning to program video games with the Unity engine. End objective: write an over sized 2 player labyrinth ball rolling game for VR that works for both a seated and room scale experience. In the end, I want it to look like you're rolling a bowling ball around in VR. Let's see how far we can get!",
+      "description": "I'm starting off a new series of videos today where we start learning to program video games with the Unity engine. End objective: write an over sized 2 player labyrinth ball rolling game for VR that works for both a seated and room scale experience. In the end, I want it to look like you're rolling a bowling ball around in VR. Let's see how far we can get!",
       "originalAirDate": "2017-03-19"
     },
 
