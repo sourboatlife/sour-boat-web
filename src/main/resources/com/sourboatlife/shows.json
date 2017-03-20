@@ -2,6 +2,21 @@
   "title": "Sour Boat Life",
   "episodes": [
     {
+      "title": "Let's Learn Something New - Ep. 1: Writing 3d games with Unity and C#",
+      "links": [
+        "https://player.twitch.tv/?channel=sourboatlife"
+      ],
+      "tags": [
+        "Unity",
+        "C#",
+        "Programming",
+        "Games"
+      ],
+      "description": "Starting off a new series of videos today where we start learning to program video games with the Unity engine. End objective: write an over sized 2 player labyrinth ball rolling game for VR that works for both a seated and room scale experience!",
+      "originalAirDate": "2017-02-20"
+    },
+
+    {
       "title": "SourBoatJavascript: Last show dicking around with javascript and our fake shell.",
       "links": [
         "https://player.twitch.tv/?video=v123518355&!autoplay"
