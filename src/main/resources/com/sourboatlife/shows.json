@@ -2,6 +2,21 @@
   "title": "Sour Boat Life",
   "episodes": [
     {
+      "title": "Let's Learn Something New - Ep. 2: Writing 3d games with Unity and C#",
+      "links": [
+        "https://player.twitch.tv/?video=v131513591&!autoplay"
+      ],
+      "tags": [
+        "Unity",
+        "C#",
+        "Programming",
+        "Games"
+      ],
+      "description": "During this episode we continue working on our Labyrinth game. We take a look at our TableController and how we clamped the rotation of the table, played with some materials from the asset store and started building out the table a little more.",
+      "originalAirDate": "2017-03-26"
+    },
+
+    {
       "title": "Let's Learn Something New - Ep. 1: Writing 3d games with Unity and C#",
       "links": [
         "https://player.twitch.tv/?video=v129936412&!autoplay"
