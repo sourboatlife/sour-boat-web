@@ -2,6 +2,21 @@
   "title": "Sour Boat Life",
   "episodes": [
     {
+      "title": "Let's Learn Something New - Ep. 3: Writing 3d games with Unity and C#",
+      "links": [
+        "https://player.twitch.tv/?video=v131951044&!autoplay"
+      ],
+      "tags": [
+        "Unity",
+        "C#",
+        "Programming",
+        "Games"
+      ],
+      "description": "Today we had time for an extra stream, so we played with respawning our ball after it is destroyed and resetting the table position. Also took a peek at the terrain generation features just for fun.",
+      "originalAirDate": "2017-03-28"
+    },
+
+    {
       "title": "Let's Learn Something New - Ep. 2: Writing 3d games with Unity and C#",
       "links": [
         "https://player.twitch.tv/?video=v131513591&!autoplay"
