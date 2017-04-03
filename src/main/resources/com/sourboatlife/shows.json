@@ -2,6 +2,21 @@
   "title": "Sour Boat Life",
   "episodes": [
     {
+      "title": "Let's Learn Something New - Ep. 4: Creating simple models in Blender to use in Unity",
+      "links": [
+        "https://player.twitch.tv/?video=v133108675&!autoplay"
+      ],
+      "tags": [
+        "Unity",
+        "Blender",
+        "Programming",
+        "Games"
+      ],
+      "description": "Today we played with Blender! We created a partial labyrinth table model in Blender and imported it into unity so we could create a more complex table with hole stamped out of it.",
+      "originalAirDate": "2017-02-02"
+    },
+
+    {
       "title": "Let's Learn Something New - Ep. 3: Writing 3d games with Unity and C#",
       "links": [
         "https://player.twitch.tv/?video=v131951044&!autoplay"
