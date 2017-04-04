@@ -33,9 +33,13 @@
                             <span class="airdate">${episode.originalAirDate}</span>
                             <p class="show-description">${episode.description}</p>
                         </summary>
-                        <ul class="parts"
+                        <ul class="parts">
                             <#list episode.links as url>
+                              <#if episode?counter == 1>
                                 <li><iframe src="${url}" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe></li>
+                              <#else>
+                                <li class="unloaded" data-source="${url}"></li>
+                              </#if>
                             </#list>
                         </ul>
                         <footer><#list episode.tags as tag><span>${tag}</span></#list></footer>
@@ -44,6 +48,15 @@
             </#list>
         </#list>
     </main>
-    <script src="js/tags.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $("details").on("click", function (e) {
+        $(e.currentTarget).find("li.unloaded").each(function(idx, value) {
+          var li = $(value);
+          var url = li.data("source");
+          li.append('<iframe src="' + url + '" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>');
+          li.removeClass("unloaded");
+        });
+      });
+    </script>
 </body>
 </html>

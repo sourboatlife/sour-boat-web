@@ -13,8 +13,6 @@ import static spark.Spark.*;
 public class Main {
 
     public static void main(String[] args) {
-        Gson gson = new Gson();
-
         String port = System.getenv("PORT");
         port(Integer.valueOf(port == null ? "8080" : port));
 
@@ -28,6 +26,9 @@ public class Main {
             return new ModelAndView(attributes, "index.ftl");
         }, new FreeMarkerEngine());
 
+        /*
+        Gson gson = new Gson();
+
         get("/sh", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
             attributes.put("shows", shows);
@@ -38,6 +39,6 @@ public class Main {
             response.type("text/json");
             return gson.toJson(shows);
         });
-
+        */
     }
 }
