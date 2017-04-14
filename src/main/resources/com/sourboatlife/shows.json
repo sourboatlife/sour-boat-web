@@ -2,6 +2,21 @@
   "title": "Sour Boat Life",
   "episodes": [
     {
+      "title": "Let's Learn Something New - Ep. 5: Programming games with Unity and C#",
+      "links": [
+        "https://player.twitch.tv/?video=v135612292&!autoplay"
+      ],
+      "tags": [
+        "Unity",
+        "C#",
+        "Programming",
+        "Games"
+      ],
+      "description": "Played with getting input from our VR controllers and messed with the camera positioning to make the table look huge in VR. Not a lot of actual programming in this one.",
+      "originalAirDate": "2017-02-09"
+    },
+    
+    {
       "title": "Let's Learn Something New - Ep. 4: Creating simple models in Blender to use in Unity",
       "links": [
         "https://player.twitch.tv/?video=v133108675&!autoplay"
