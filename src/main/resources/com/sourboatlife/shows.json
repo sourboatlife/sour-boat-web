@@ -2,6 +2,21 @@
   "title": "Sour Boat Life",
   "episodes": [
     {
+      "title": "Let's Learn Something New - Ep. 6: Programming games with Unity and C# - interacting with objects",
+      "links": [
+        "https://player.twitch.tv/?video=v136443126&!autoplay"
+      ],
+      "tags": [
+        "Unity",
+        "C#",
+        "Programming",
+        "Games"
+      ],
+      "description": "Today, we didn't get a lot done, but met a couple new people and provoked threats of physical violence from the girlfriend sector!"
+      "originalAirDate": "2017-04-16"
+    },
+
+    {
       "title": "Let's Learn Something New - Ep. 5: Programming games with Unity and C#",
       "links": [
         "https://player.twitch.tv/?video=v135612292&!autoplay"
@@ -13,7 +28,7 @@
         "Games"
       ],
       "description": "Played with getting input from our VR controllers and messed with the camera positioning to make the table look huge in VR. Not a lot of actual programming in this one.",
-      "originalAirDate": "2017-02-09"
+      "originalAirDate": "2017-04-09"
     },
     
     {
@@ -28,7 +43,7 @@
         "Games"
       ],
       "description": "Today we played with Blender! We created a partial labyrinth table model in Blender and imported it into unity so we could create a more complex table with hole stamped out of it.",
-      "originalAirDate": "2017-02-02"
+      "originalAirDate": "2017-04-02"
     },
 
     {
