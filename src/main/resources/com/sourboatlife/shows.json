@@ -2,6 +2,17 @@
   "title": "Sour Boat Life",
   "episodes": [
     {
+      "title": "Let's Learn Something New - Ep. 7: Messing around with Unity some more, possibly ranting about software engineering!",
+      "links": [
+        "https://player.twitch.tv/?video=v140715028&!autoplay"
+      ],
+      "tags": [
+      ],
+      "description": "Ranting and rambling all over the place. I don't even know what I was going on about.",
+      "originalAirDate": "2017-04-30"
+    },
+
+    {
       "title": "Let's Learn Something New - Ep. 6: Programming games with Unity and C# - interacting with objects",
       "links": [
         "https://player.twitch.tv/?video=v136443126&!autoplay"
